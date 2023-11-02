@@ -11,7 +11,7 @@ pacman -Syu --noconfirm
 # Xorg-minimal
 pacman -S xorg-server xorg-xinit xorg-xset xorg-xinput nano lxsession --noconfirm
 # Dwm dependencies
-pacman -S libx11 libxft libxinerama git lxsession --noconfirm
+pacman -S libx11 libxft libxinerama lxsession --noconfirm
 # Fonts
 pacman -S ttf-jetbrains-mono-nerd noto-fonts noto-fonts-cjk noto-fonts-emoji --noconfirm
 # Extra-needed-apps
