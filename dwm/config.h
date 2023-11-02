@@ -1,4 +1,4 @@
-/* hda source code for dwm  */
+/* hendr source code for dwm  */
 
 /* volume and media keys */
 #include <X11/XF86keysym.h>
@@ -42,8 +42,7 @@ static const Rule rules[] = {
 	{ "Thorium-browser",       NULL,       NULL,      1<<1,          0,            -1},
 	{ "Spotify",  NULL,        NULL,       1 << 2,       0,          -1              },
 	{ "steam",    NULL,        NULL,       1 << 3,       0,          -1              },
-	{ "SimpleScreenRecorder",  NULL,       NULL,       1 << 4,       0,           -1 },
-	{ "Virt-manager",  NULL,   NULL,       1 << 4,       0,          -1   			 },
+	{ "SimpleScreenRecorder",  NULL,       NULL,       1 << 4,       0,           -1 },	
 };
 
 /* layout(s) */
@@ -87,9 +86,9 @@ static const char *picomcmd[] = { "toggle_picom.sh", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_e,      spawn,          {.v = rofircmd } },
-    { MODKEY,                       XK_d,      spawn,          {.v = rofidcmd } },
-    { MODKEY,                       XK_w,      spawn,          {.v = rofiwcmd } },
-    { MODKEY|ShiftMask,             XK_q,      spawn,          {.v = pwrmenu } },
+   	{ MODKEY,                       XK_d,      spawn,          {.v = rofidcmd } },
+  	{ MODKEY,                       XK_w,      spawn,          {.v = rofiwcmd } },
+ 	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = pwrmenu } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY, 	                    XK_z,      spawn,          {.v = browscmd } },
 	{ MODKEY,                       XK_x,      spawn,          {.v = filexcmd } },
@@ -129,7 +128,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
 	{ MODKEY|ShiftMask,             XK_r,      quit,           {0} },
-    { 0,                            XF86XK_AudioLowerVolume,   spawn,          {.v = downvol } },
+   	{ 0,                            XF86XK_AudioLowerVolume,   spawn,          {.v = downvol } },
 	{ 0,                            XF86XK_AudioMute,          spawn,          {.v = mutevol } },
 	{ 0,                            XF86XK_AudioRaiseVolume,   spawn,          {.v = upvol   } },
 	{ 0,                            XF86XK_AudioPlay,          spawn,          {.v = playpause } },
