@@ -18,16 +18,16 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 10;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
 static const char *fonts[]          = { "JetBrainsMonoNL Nerd Font:size=14:antialias=true:autohint=true:style:bold" };
-static const char bg1[]             = "#1D2021";
-static const char bg2[]             = "#282828";
-static const char fg1[]             = "#EBDBB2";
-static const char fg2[]             = "#A89984";
-static const char acnt1[]           = "#CC241D";
+static const char bg1[]             = "#282A36";
+static const char bg2[]             = "#6272A4";
+static const char fg1[]             = "#F8F8F2";
+static const char fg2[]             = "#FFFFFF";
+static const char acnt1[]           = "#6272A4";
 static const char acnt2[]           = "#282828";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { fg2,       bg2,        acnt2   },
-	[SchemeSel]  = { fg1,       bg1,        fg1     },
+	[SchemeNorm] = { fg2,       bg1,        acnt2   },
+	[SchemeSel]  = { fg1,       bg2,        fg1     },
 };
 
 /* tagging */
