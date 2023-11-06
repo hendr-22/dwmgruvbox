@@ -9,7 +9,7 @@ fi
 # Update the package database and upgrade installed packages
 pacman -Syu --noconfirm
 # Xorg-minimal
-pacman -S xorg-server xorg-xinit xorg-xset xorg-xinput nano lxsession --noconfirm
+pacman -S xorg-server xorg-xinit xorg-xset xorg-xinput nano --noconfirm
 # Dwm dependencies
 pacman -S libx11 libxft libxinerama lxsession --noconfirm
 # Fonts
